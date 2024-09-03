@@ -2,7 +2,7 @@ const { facebook, bot, genButtonMessage, isUrl } = require('../lib/')
 
 bot(
 	{
-		pattern: 'fb',
+		pattern: 'fb ?(.*)',
 		fromMe: true,
 		desc: 'Download facebook video',
 		type: 'download',
