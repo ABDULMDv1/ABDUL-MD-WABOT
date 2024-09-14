@@ -36,7 +36,7 @@ await conn.sendMessage(from,{image:{url. data.thumnail},captoin: desc},{quoted:m
 let down = fg.yta(url)
 let downloadUrl = down.dl_url
 
-// send audio message 
+// send audio+document message 
 await.conn.sendMessage(from,{audio: {url:downloadUrl },mimetype:"audio/mpeg"},{qutoed:mek})
 await.conn.sendMessage(from,{document: {url:downloadUrl },mimetype:"audio/mpeg,fileName:data.title + ".mp3" ,caption:"> POWERED BY ABDUL MD 2.0"},{qutoed:mek})
 
